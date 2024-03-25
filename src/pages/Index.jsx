@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Heading, Text, Button, Stack, Flex, Image, Container, SimpleGrid, Icon } from "@chakra-ui/react";
+import { Box, Heading, Text, Button, Stack, Flex, Image, Container, SimpleGrid, Icon, Link } from "@chakra-ui/react";
 import { FaFileAlt, FaUsers, FaChartLine } from "react-icons/fa";
+import { Link as RouterLink } from "react-router-dom";
 
 const Feature = ({ title, text, icon }) => {
   return (
