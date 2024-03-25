@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, Heading, Text, Button, Stack, Flex, Image, Container, SimpleGrid, Icon, Link } from "@chakra-ui/react";
-import { FaFileAlt, FaUsers, FaChartLine } from "react-icons/fa";
+import { Box, Heading, Text, Button, Stack, Flex, Image, Container, SimpleGrid, Icon } from "@chakra-ui/react";
+import { FaFileAlt, FaUsers, FaChartLine, FaSitemap, FaProjectDiagram, FaExchangeAlt } from "react-icons/fa";
 import { Link as RouterLink } from "react-router-dom";
 
 const Feature = ({ title, text, icon }) => {
@@ -60,7 +60,13 @@ const Index = () => {
       </Stack>
 
       <Box p={4}>
+        <Heading as="h2" size="xl" textAlign="center" mb={10}>
+          Business Pain Points We Address for Startups
+        </Heading>
         <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+          <Feature icon={<Icon as={FaSitemap} w={10} h={10} />} title={"Process Modeling"} text={"Identify inefficiencies and model streamlined processes for your startup's growth."} />
+          <Feature icon={<Icon as={FaProjectDiagram} w={10} h={10} />} title={"Business Architecture"} text={"Design the structure of your business to align with your strategic objectives."} />
+          <Feature icon={<Icon as={FaExchangeAlt} w={10} h={10} />} title={"Change Management"} text={"Manage the smooth transition of your business through growth stages and changes."} />
           <Feature icon={<Icon as={FaFileAlt} w={10} h={10} />} title={"Detailed Documentation"} text={"We create comprehensive, easy-to-follow documentation for your business processes."} />
           <Feature icon={<Icon as={FaUsers} w={10} h={10} />} title={"Expert Consulting"} text={"Our team of experienced consultants will analyze your workflows and provide valuable insights."} />
           <Feature icon={<Icon as={FaChartLine} w={10} h={10} />} title={"Improved Efficiency"} text={"By streamlining your processes, we help you increase productivity and reduce costs."} />
